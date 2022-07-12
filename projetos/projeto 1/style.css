@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'neon';
+    src: url(fonts/neon.otf) format('opentype');
+}
+@font-face {
+    font-family: 'neon';
+    src: url(fonts/neon.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+#nav {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+#togglenav {
+    display: none;
+}
+#togglenav:checked+nav {
+    left: 0;  
+}
+nav{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(0 0 0 / 89%);
+    height: 100%;
+    max-width: 420px;
+    width: 100%;
+    padding: 20px 0px;
+    transition: all .6s linear;
+}
+.navoverlay{
+    background-color: transparent;
+    transition: all .5s linear;
+}
+#togglenav:checked+nav+.navoverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+nav > a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0px;
+    color: #ffffff;
+    transition-duration: .3s;
+}
+
+nav > a:hover {
+    background-color: rgb(0 0 0 / 80%);
+}
+.navbutton{
+    display: block;
+    width: 30px;
+    margin: 20px auto;
+    max-width: 30px;
+    cursor: pointer;
+}
+#mainbanner {
+    background-image: url(imagens/1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    padding-left: 120px;
+    padding-right: 120px;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+#mainbanner h1 {
+    color:white;
+    font-size: 10em;
+    font-family: 'neon';
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.397);
+    text-align: center;
+}
+#mainbanner::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#mainbanner * {
+    z-index: 1;
+}
+#secondbanner {
+    background-image: url(imagens/2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: left;
+    padding-left: 120px;
+    padding-right: 120px;
+    flex-flow: column;
+    justify-content: center;
+}
+#secondbanner p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+#secondbanner p span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-right: 20px;
+}
+#secondbanner h1 {
+    font-family: 'neon';
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+#secondbanner h1 span {
+    font-size: 120%;
+    font-family: 'neon';
+}
+#list {
+    background-color: #f73eea;
+    color: white;
+    height: 100%;
+    max-height: 500px;
+    padding: 0px 0px 30px 0;
+}
+#list h1 {
+    font-family: 'neon';
+    font-size: 4em;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+#list p {
+    font-size: 1.4em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#lastevent {
+    background-color: #332932;
+    color: white;
+}
+#lastevent h1 {
+    text-align: center;
+    font-size: 4em;
+    padding: 15px;
+    font-family: 'neon';
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+}
+#lastevent h2, #lastevent h3, #lastevent p {
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#lastevent h3 { 
+    display: block;
+    font-size: 1.5em;
+}
+#lastevent h2 {
+    font-size: 2em;
+    font-family: 'neon';
+}
+#lastevent p a {
+    display: inline-block;
+    font-size: 1.2em;
+    background-color: #2290f7;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-top: 20px;
+    width: max-content;
+    text-decoration: none;
+    color: white;
+}
+#lastevent p a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.4s linear;
+}
+
+#lastevent>div {
+    vertical-align: top;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+#lastevent>div::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.image {
+    max-width: 250px;
+    width: 100%;
+    max-height: 250px;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+#nextlevel {
+    background-color: #f73eea;
+    color: white;
+    padding: 20px;
+}
+#nextlevel h1 {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+}
+#nextlevel p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding: 6px 30px;
+}
+#ticket {
+    background-image: url(imagens/6.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    padding-left: 120px;
+    padding-right: 120px;
+    flex-flow: column;
+    justify-content: center;
+    font-size: 2em;
+}
+#ticket h2 {
+    font-family: 'neon';
+    font-size: 5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+    margin-bottom: 50px;
+}
+#ticket h3 {
+    font-family: 'neon';
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+}
+#ticket p a {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #f73eea;
+    color: white;
+    padding: 10px;
+}
+#ticket p a:hover {
+    background-color: #94258d;
+    transition: all 0.2s linear;
+}
+#best {
+    background-color: #332932;
+    color: white;
+    font-size: 2em;
+    font-family: 'neon';
+    padding: 50px;
+}
+#best h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+#finalpage {
+    background-color: #332932;
+    color: white;
+}
+#finalpage h1 {
+    font-family: 'neon';
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+#finalpage p {
+    font-size: 1.2em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+#finalpage span {
+    font-weight: bold;
+    font-size: 1.7em;
+    padding: 20px;
+}
+#call {
+    color: #e773e0;
+}
+#footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
