@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
-
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Noto Sans', sans-serif;
-}
-
-body * {
     box-sizing: border-box;
-}
-
-main {
-    width: 100vw;
-    height: 100vh;
     background: #201b2c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .left-login {
@@ -118,7 +120,8 @@ main {
 }
 
 @media only screen and (max-width: 600px){
-    main {
+    body {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -127,21 +130,23 @@ main {
     }
 
     .left-login {
-        width: 100%;
-        height: auto;
+        width: 320px;
+        height: 200px;
     }
 
     .right-login {
-        width: 100%;
-        height: 100vh;
+        width: 320px;
+        height: 420px;
     }
 
     .left-login-image {
-        width: 50vw;
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
     }
 
     .card-login {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 90%;
     }
 }
