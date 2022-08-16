@@ -16,45 +16,54 @@ body {
     background-image: url(imagens/fundo.png);
     background-position: center center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 .icon {
     display: flex;
-    width: 30vh;
-    padding: 30px;
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
 }
 
 .login {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .card-login {
-    width: 30%;
-    height: 80%;
+    width: 100%;
+    max-width: 570px;
+    height: 100%;
+    max-height: 725px;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
+    margin-bottom: 40px;
     background: #ffffff;
-    border-radius: 2px;
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.56);
+    border-radius: 1px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 form > h1 {
+    text-align: center;
     color: #111111;
     margin-top: 50px;
     margin-bottom: 60px;
 }
 
 .dados {
-    width: 80%;
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 0px;
+    padding: 10px;
 }
 
 .dados > input {
@@ -62,7 +71,7 @@ form > h1 {
     border: none;
     padding: 20px;
     background: #e4e2e2;
-    font-size: 12pt;
+    font-size: 16px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);
     box-sizing: border-box;
 }
@@ -81,6 +90,8 @@ form > h1 {
 
 .outros-login {
     display: flex;
+    width: 100%;
+    max-width: 450px;
     padding-top: 30px;
 }
 
@@ -94,15 +105,16 @@ div.outros-login > button {
     background-color: #039BE5;
     background-image: url(imagens/facebook.svg);
     box-sizing: border-box;
-    width: 120px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     border: 2px solid rgba(0, 0, 0, 0.05);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 3rem;
+    background-size: 2rem;
 }
 
 .btn2 {
@@ -111,15 +123,16 @@ div.outros-login > button {
     background-color: #F9F9F9;
     background-image: url(imagens/google.svg);
     box-sizing: border-box;
-    width: 120px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
     border: 2px solid rgba(0, 0, 0, 0.05);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 3rem;
+    background-size: 2rem;
 }
 
 .btn3 {
@@ -128,8 +141,9 @@ div.outros-login > button {
     background-color: black;
     background-image: url(imagens/mac.png);
     box-sizing: border-box;
-    width: 120px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
@@ -145,23 +159,25 @@ div.outros-login > button:hover {
 }
 
 .check {
-    margin: 15px;
+    width: 100%;
+    max-width: 460px;
+    padding: 15px;
 }
 
 .botao-login {
     box-sizing: border-box;
     background-image: url(imagens/seta-direita.png);
     background-color: #e4e2e2;
-    width: 80px;
-    max-width: 100%;
-    height: 80px;
-    border-radius: 50px;
+    width: 100%;
+    width: 100px;
+    height: 100%;
+    height: 100px;
+    border-radius: 30%;
     cursor: pointer;
     border: 2px solid rgba(0, 0, 0, 0.05);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 3rem;
-    margin: 20px;
 }
 
 .botao-login:hover {
@@ -171,7 +187,7 @@ div.outros-login > button:hover {
 }
 
 .link {
-    margin-top: 50px;
+    padding-top: 40px;
 }
 
 .link > p {
@@ -184,11 +200,36 @@ div.outros-login > button:hover {
     color: #646464;
 }
 
+.link > p > a:hover {
+    color: #2b2b2b;
+}
+
 footer {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.footer {
     display: flex;
-    justify-content: space-evenly;
-    color: #4b4b4b;
-    width: 50%;
-    padding-bottom: 60px;
-    font-size: .8em;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+footer > div > a {
+    text-decoration: none;
+    color: #ffffffb8;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#p {
+    font-size: 10px;
+    color: #ffffffb8;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 400px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
