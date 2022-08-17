@@ -8,6 +8,10 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body * {
     box-sizing: border-box;
 }
@@ -18,13 +22,18 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    font-size: 1.6rem;
 }
 
 .icon {
     display: flex;
     width: 100%;
-    max-width: 300px;
     padding: 25px;
+}
+
+.img {
+    width: 100%;
+    max-width: 300px;
 }
 
 .login {
@@ -71,7 +80,7 @@ form > h1 {
     border: none;
     padding: 20px;
     background: #e4e2e2;
-    font-size: 16px;
+    font-size: 1.6rem;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.329);
     box-sizing: border-box;
 }
@@ -215,7 +224,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     max-width: 700px;
-    font-size: 15px;
+    font-size: 1.5rem;
     padding-bottom: 10px;
 }
 
@@ -226,10 +235,32 @@ footer > div > a {
 }
 
 #p {
-    font-size: 10px;
+    font-size: 1rem;
     color: #ffffffb8;
     padding-bottom: 50px;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+
+    .icon {
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer > a > p  {
+        padding-bottom: 5px
+    }
+
+    #p {
+        text-align: center;
+    }
+
 }
