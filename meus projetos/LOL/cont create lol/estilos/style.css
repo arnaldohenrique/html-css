@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@import url(//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold);
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'BeaufortforLOL-Bold', serif;
+    box-sizing: border-box;
+    word-spacing: 3px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px 0px 50px;
+}
+
+header {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 120px;
+}
+
+main {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+main > div > h1 {
+    font-size: 9rem;
+    color: white;
+}
+
+main > div > p {
+    font-size: 2rem;
+    color: #D5B26E
+}
+
+.divider {
+    display: block;
+    width: 100%;
+    max-width: 1099px;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email {
+    width: 100%;
+}
+
+.email > input {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #D5B26E;
+    padding: 30px 120px;
+    background: #ffffff00;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 100%;
+}
+
+button {
+    display: block;
+    padding: 12px 60px;
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #111;
+    color: #D5B26E;
+    border-color: #D5B26E;
+    font-size: 3rem;
+}
+
+.criar-conta {
+    display: flex;
+    margin-top: 30px;
+    color: #D5B26E;
+    font-size: 1.2rem;
+}
+
+.criar-conta > a {
+    margin-left: 8px;
+    color: #c4b998;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: baseline;
+    margin-top: 100px;
+}
+
+.footer-logo-img {
+    width: 120px;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    padding-right: 20px;
+}
+
+.footer > div > p {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.termos {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #D5B26E;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+.termos > p {
+    margin: 10px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.termos > p > a {
+    color: #D5B26E;
+}
+
+.background-black {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-black::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.705);
+    background-size: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../imagens/bg-welcome.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    filter: blur(8px);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
